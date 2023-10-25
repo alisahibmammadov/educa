@@ -1,7 +1,12 @@
 
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <main className="">
+      <section className="container mx-auto">
+        <div></div>
+        <div></div>
+      </section>
+    </main>
   )
 }
 
