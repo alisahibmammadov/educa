@@ -1,13 +1,12 @@
-
 function Navbar() {
   return (
-    <main className="">
-      <section className="container mx-auto">
-        <div></div>
+    <main className="border-t-4 border-deepReddishBrown">
+      <section className="container mx-auto ">
+        <div>asasd</div>
         <div></div>
       </section>
     </main>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
