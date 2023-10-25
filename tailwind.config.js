@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        deepReddishBrown: "#8d2729",
+        deepRed: "#a12c2f",
+      },
+    },
   },
   plugins: [],
 };
