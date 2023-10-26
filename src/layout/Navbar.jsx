@@ -34,7 +34,7 @@ function Navbar() {
               src={Stellar}
               alt="Stellar"
               className="w-[157px]"
-              data-aos="zoom-out"
+              data-aos="zoom-in"
             />
           </Link>
         </div>
@@ -85,7 +85,7 @@ function Navbar() {
                 className="relative flex items-center  py-7 md:px-2 lg:px-4 xl:px-6 "
               >
                 <span
-                  data-aos="zoom-out"
+                  
                   className="select-none cursor-pointer hover:text-[#f5a425] md:text-[10px] lg:text-sm text-[#222222] font-normal tracking-[.3px]"
                   onClick={() => handleClickLink(elem.id)}
                 >
@@ -109,7 +109,7 @@ function Navbar() {
               </div>
             ))}
             <Link
-              data-aos="zoom-out"
+              
               className="cursor-pointer hover:text-[#f5a425] md:text-xs lg:text-sm text-[#222222] font-normal tracking-[.3px]"
               to="/contact"
             >

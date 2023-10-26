@@ -32,7 +32,7 @@ function Routing() {
       {topBtn ? (
         <div
         data-aos="zoom-in"
-          className="top bg-deepRed hover:bg-deepReddishBrown hover:cursor-pointer text-white w-12 h-12 rounded-full flex items-center justify-center shadow-boxShadow"
+          className="top bg-goldenRod hover:bg-deepReddishBrown hover:cursor-pointer text-white w-12 h-12 rounded-full flex items-center justify-center shadow-boxShadow"
           onClick={handleClickTop}
         >
           <i className="fa-solid fa-chevron-up"></i>
