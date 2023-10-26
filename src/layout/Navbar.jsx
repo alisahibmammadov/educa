@@ -138,7 +138,7 @@ function Navbar() {
               {linksData.map((elem, index) => (
                 <div
                   key={index}
-                  className="relative flex items-center  py-7 md:px-2 lg:px-4 xl:px-6 "
+                  className="relative flex items-center  py-4 md:px-2 lg:px-4 xl:px-6 "
                 >
                   <span
                     data-aos="zoom-out"
@@ -165,8 +165,8 @@ function Navbar() {
                 </div>
               ))}
               <Link
-                data-aos="zoom-out"
-                className="cursor-pointer hover:text-[#f5a425] md:text-xs lg:text-sm text-[#222222] font-normal tracking-[.3px] mt-2"
+                // data-aos="zoom-out"
+                className="cursor-pointer select-none hover:text-[#f5a425] md:text-xs lg:text-sm text-[#222222] font-normal tracking-[.3px] mt-2"
                 to="/contact"
               >
                 {t("contact")}
