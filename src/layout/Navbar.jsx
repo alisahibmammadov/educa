@@ -132,7 +132,7 @@ function Navbar() {
         {navMobile ? (
           <div
             data-aos="fade-right"
-            className="flex md:hidden absolute top-0 left-0 bg-deepReddishBrown p-5"
+            className="flex md:hidden absolute top-0 left-0 bg-deepReddishBrown p-5 rounded-r"
           >
             <div className=" flex flex-col items-start justify-end">
               {linksData.map((elem, index) => (
