@@ -3,8 +3,7 @@ import Stellar from "../assets/img/stellar.png";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import AOS from "aos";
-import emailTel from "../data/emailTel";
-import langBtnData from "../data/langBtnData";
+import { emailTel, langBtnData } from "../data/navbar/navbarDatas";
 function Navbar() {
   const { t, i18n } = useTranslation();
   const [lang, setLang] = useState(i18n.language);

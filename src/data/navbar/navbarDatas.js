@@ -131,4 +131,44 @@ const linksDataRu = [
   },
 ];
 
-export { linksDataAz, linksDataRu, linksDataEn };
+const langBtnData = [
+  {
+    id: 1,
+    class:
+      "text-start text-[#515151] text-xs font-normal hover:text-[#f5a425] duration-200 py-2 px-3 cursor-pointer w-full border-b-2 border-[#ccc] ",
+    content: "Az",
+    props: "az",
+  },
+  {
+    id: 2,
+    class:
+      "text-start text-[#515151] text-xs font-normal hover:text-[#f5a425] duration-200 py-2 px-3 cursor-pointer w-full border-b-2 border-[#ccc]",
+    content: "En",
+    props: "en",
+  },
+  {
+    id: 1,
+    class:
+      "text-start text-[#515151] text-xs font-normal hover:text-[#f5a425] duration-200 py-2 px-3 cursor-pointer w-full ",
+    content: "Ru",
+    props: "ru",
+  },
+];
+const emailTel = [
+  {
+    id: 1,
+    span: "+994 55 799 19 66",
+    spanClass:
+      "flex items-center gap-1 text-gray tracking-wide text-xs font-normal pl-4 mr-2 border-[#ccc] mt-2",
+    iClass: "fa-solid fa-phone",
+  },
+  {
+    id: 2,
+    span: "alisahibmammadov98@gmail.com",
+    spanClass:
+      "flex items-center gap-1 text-gray tracking-wide text-xs font-normal pl-4 mr-2 border-[#ccc] mt-2",
+    iClass: "fa-regular fa-envelope",
+  },
+];
+
+export { emailTel, langBtnData, linksDataAz, linksDataRu, linksDataEn };
