@@ -142,7 +142,7 @@ function Navbar() {
                 >
                   <span
                     data-aos="zoom-out"
-                    className="select-none cursor-pointer hover:text-[#f5a425] text-sm text-[#222222] font-normal tracking-[.3px]"
+                    className="select-none cursor-pointer hover:text-[#f5a425] text-md text-[#222222] font-normal tracking-[.3px]"
                     onClick={() => handleClickLink(elem.id)}
                   >
                     {elem.name}{" "}
@@ -166,7 +166,7 @@ function Navbar() {
               ))}
               <Link
                 // data-aos="zoom-out"
-                className="cursor-pointer select-none hover:text-[#f5a425] text-sm text-[#222222] font-normal tracking-[.3px] mt-2"
+                className="cursor-pointer select-none hover:text-[#f5a425] text-md text-[#222222] font-normal tracking-[.3px] mt-2"
                 to="/contact"
               >
                 {t("contact")}
