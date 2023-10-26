@@ -1,18 +1,29 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import { linksDataAz, linksDataRu, linksDataEn } from "../data/linksData";
 
 const resources = {
   az: {
     translation: {
-        salam:"salam"
+      apply: "Müraciət et",
+      linksData: linksDataAz,
+      contact:"Əlaqə"
     },
   },
   en: {
-    translation: {},
+    translation: {
+      apply: "Apply now",
+      linksData: linksDataEn,
+      contact:"Contact"
+    },
   },
   ru: {
-    translation: {},
+    translation: {
+      apply: "Применить сейчас",
+      linksData: linksDataRu,
+      contact:"Контакт"
+    },
   },
 };
 i18n
