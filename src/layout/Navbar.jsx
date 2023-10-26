@@ -19,7 +19,6 @@ function Navbar() {
     setClickedBtn(false);
   };
   const handleClickLink = (id) => {
-    // id ?
     setLinkBtn((prev) => (prev === id ? 0 : id));
   };
   console.log(linkBtn);
@@ -98,7 +97,7 @@ function Navbar() {
                   <nav className="flex flex-col gap-2  absolute top-full translate-x-[-50%] left-1/2 bg-deepRed py-1">
                     {elem.linkName.map((elem, index) => (
                       <Link
-                      onClick={()=>setLinkBtn(0)}
+                        onClick={() => setLinkBtn(0)}
                         key={index}
                         to={elem.path}
                         className="text-xs font-normal whitespace-nowrap text-white py-1 px-2 hover:bg-deepReddishBrown"
@@ -141,7 +140,6 @@ function Navbar() {
                   className="relative flex items-center  py-4 md:px-2 lg:px-4 xl:px-6 "
                 >
                   <span
-                    data-aos="zoom-out"
                     className="select-none cursor-pointer hover:text-[#f5a425] text-md text-[#222222] font-normal tracking-[.3px]"
                     onClick={() => handleClickLink(elem.id)}
                   >
@@ -152,7 +150,7 @@ function Navbar() {
                     <nav className="flex flex-col gap-2  absolute top-1/2 translate-y-[-50%] left-[125px] bg-deepRed py-1">
                       {elem.linkName.map((elem, index) => (
                         <Link
-                        onClick={()=>setLinkBtn(0)}
+                          onClick={() => setLinkBtn(0)}
                           key={index}
                           to={elem.path}
                           className="text-xs font-normal whitespace-nowrap text-white py-1 px-2 hover:bg-deepReddishBrown"
@@ -165,7 +163,6 @@ function Navbar() {
                 </div>
               ))}
               <Link
-                // data-aos="zoom-out"
                 className="cursor-pointer select-none hover:text-[#f5a425] text-md text-[#222222] font-normal tracking-[.3px] mt-2"
                 to="/contact"
               >
