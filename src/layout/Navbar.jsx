@@ -11,6 +11,7 @@ function Navbar() {
   const [clickedBtn, setClickedBtn] = useState(false);
   const [linkBtn, setLinkBtn] = useState(0);
   const linksData = t("linksData", { returnObjects: true });
+  const [navMobile, setNavMobile] = useState(false);
 
   const handleClick = (lng) => {
     i18n.changeLanguage(lng);
@@ -18,7 +19,8 @@ function Navbar() {
     setClickedBtn(false);
   };
   const handleClickLink = (id) => {
-    setLinkBtn(id);
+    // id ?
+    setLinkBtn((prev) => (prev === id ? 0 : id));
   };
   console.log(linkBtn);
   useEffect(() => {
@@ -26,7 +28,7 @@ function Navbar() {
   }, []);
 
   return (
-    <main className="border-t-4 border-deepReddishBrown">
+    <main className=" border-t-4 border-deepReddishBrown">
       <section className="container mx-auto flex justify-between px-3 md:px-1">
         <div className="py-14 pr-28 md:border-r-2 border-[#f2f5f6]">
           <Link to="/">
@@ -96,6 +98,7 @@ function Navbar() {
                   <nav className="flex flex-col gap-2  absolute top-full translate-x-[-50%] left-1/2 bg-deepRed py-1">
                     {elem.linkName.map((elem, index) => (
                       <Link
+                      onClick={()=>setLinkBtn(0)}
                         key={index}
                         to={elem.path}
                         className="text-xs font-normal whitespace-nowrap text-white py-1 px-2 hover:bg-deepReddishBrown"
@@ -116,11 +119,61 @@ function Navbar() {
             </Link>
           </div>
         </div>
+        {/* bars icon */}
         <div className="md:hidden  flex items-center">
-          <div className="flex md:hidden items-center justify-center rounded w-9 h-9 bg-[#f5a425] cursor-pointer">
+          <div
+            onClick={() => setNavMobile(!navMobile)}
+            className="flex md:hidden items-center justify-center rounded w-9 h-9 bg-[#f5a425] cursor-pointer"
+          >
             <i className="fa-solid fa-bars"></i>
           </div>
         </div>
+        {/* Navbar mobile */}
+        {navMobile ? (
+          <div
+            data-aos="fade-right"
+            className="flex md:hidden absolute top-0 left-0 bg-deepReddishBrown p-5"
+          >
+            <div className=" flex flex-col items-start justify-end">
+              {linksData.map((elem, index) => (
+                <div
+                  key={index}
+                  className="relative flex items-center  py-7 md:px-2 lg:px-4 xl:px-6 "
+                >
+                  <span
+                    data-aos="zoom-out"
+                    className="select-none cursor-pointer hover:text-[#f5a425] md:text-[10px] lg:text-sm text-[#222222] font-normal tracking-[.3px]"
+                    onClick={() => handleClickLink(elem.id)}
+                  >
+                    {elem.name}{" "}
+                    <i className="fa-solid fa-chevron-right  text-xs"></i>
+                  </span>
+                  {linkBtn == elem.id ? (
+                    <nav className="flex flex-col gap-2  absolute top-1/2 translate-y-[-50%] left-[125px] bg-deepRed py-1">
+                      {elem.linkName.map((elem, index) => (
+                        <Link
+                        onClick={()=>setLinkBtn(0)}
+                          key={index}
+                          to={elem.path}
+                          className="text-xs font-normal whitespace-nowrap text-white py-1 px-2 hover:bg-deepReddishBrown"
+                        >
+                          {elem.link}
+                        </Link>
+                      ))}
+                    </nav>
+                  ) : null}
+                </div>
+              ))}
+              <Link
+                data-aos="zoom-out"
+                className="cursor-pointer hover:text-[#f5a425] md:text-xs lg:text-sm text-[#222222] font-normal tracking-[.3px] mt-2"
+                to="/contact"
+              >
+                {t("contact")}
+              </Link>
+            </div>
+          </div>
+        ) : null}
       </section>
     </main>
   );

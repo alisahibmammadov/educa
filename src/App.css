@@ -4,3 +4,13 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+body {
+  position: relative;
+}
+.top {
+  position: fixed;
+  bottom: 5%;
+  right: 8%;
+  z-index: 99999;
+}
