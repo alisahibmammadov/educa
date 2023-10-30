@@ -1,16 +1,24 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+// Link Data Start
 import {
   linksDataAz,
   linksDataRu,
   linksDataEn,
 } from "../data/navbar/navbarDatas";
+// BooksCard data Start
 import {
   BooksCardAz,
   BooksCardEn,
   BooksCardRu,
 } from "../data/home/readbooks/BooksCard";
+// OurTeacher Data start
+import {
+  OurTeachersAz,
+  OurTeachersEn,
+  OurTeachersRu,
+} from "../data/home/ourteachers/OurTeachers";
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 const resources = {
   az: {
@@ -21,12 +29,19 @@ const resources = {
       pathToSuccess:
         "Biznes liderləri xəbərdar edir ki, gənclər uğura aparan yol 'səhv satılan' yoldur.",
       viewCourses: "Kurslara baxın",
-      // Homepage -> Read Book
-      youCanReadBooks: "Kitablar Oxuya Bilərsiniz",
-      question:
+      //***Homepage -> Read Book
+      readBooksHead: [
+        "Kitablar Oxuya Bilərsiniz",
         "Yəqin ki, onların dəbdə olan balta meditasiyası haqqında eşitməmisiniz",
+      ],
       booksCard: BooksCardAz,
-      bookBtn:"Kitablara Keçin"
+      bookBtn: "Kitablara Keçin",
+      //*** Our Teacher Start
+      teacherData: OurTeachersAz,
+      teacherPageHead: [
+        "Müəllimlərimiz",
+        "High Life kalamar sözün əsl mənasında Helvetica quinoa kilsə açarıdır",
+      ],
     },
   },
   en: {
@@ -37,12 +52,19 @@ const resources = {
       pathToSuccess:
         "Young people have been 'mis-sold' path to success, business leaders warn.",
       viewCourses: "View Courses",
-      // Homepage -> Read Book
-      youCanReadBooks: "You Can Read Books",
-      question:
+      //*** Homepage -> Read Book
+      readBooksHead: [
+        "You Can Read Books",
         "Plaid you probably haven't heard of them fashion axe meditation",
+      ],
       booksCard: BooksCardEn,
-      bookBtn:"Go to the books",
+      bookBtn: "Go to the books",
+      //*** Our Teacher Start
+      teacherData: OurTeachersEn,
+      teacherPageHead: [
+        "Our Teachers",
+        "High Life squid literally scenester fap Helvetica quinoa church-key",
+      ],
     },
   },
   ru: {
@@ -53,12 +75,19 @@ const resources = {
       pathToSuccess:
         "Молодым людям <br/> 'неправильно продали' путь к успеху, предупреждают лидеры бизнеса.",
       viewCourses: "Посмотреть курсы",
-      // Homepage -> Read Book
-      youCanReadBooks: "Вы можете читать книги",
-      question:
+      //*** Homepage -> Read Book
+      readBooksHead: [
+        "Вы можете читать книги",
         "Плед, о котором вы, наверное, не слышали, модный топор для медитации",
+      ],
       booksCard: BooksCardRu,
-      bookBtn:"Перейти к книгам"
+      bookBtn: "Перейти к книгам",
+      //*** Our Teacher Start
+      teacherData: OurTeachersRu,
+      teacherPageHead: [
+        "Наши учителя",
+        "High Life кальмар буквально сценастер fap Helvetica quinoa церковный ключ",
+      ],
     },
   },
 };

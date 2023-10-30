@@ -2,19 +2,20 @@ import { useTranslation } from "react-i18next";
 
 function ReadBooks() {
   const { t } = useTranslation();
-  const booksCard = t("booksCard", { returnObjects: true });
+  let booksCard = t("booksCard", { returnObjects: true });
+  let readBooksHead = t("readBooksHead", { returnObjects: true });
   return (
     <main className="bg-[#1f272b]">
       <section className=" w-full container mx-auto px-3 md:px-1 py-20 flex flex-col justify-between items-center gap-12">
-        <div className="flex flex-col items-center gap-6 pb12">
+        <header className="flex flex-col items-center gap-6 pb12">
           <h1 className="text-2xl font-medium text-white">
-            {t("youCanReadBooks")}
+            {readBooksHead[0]}
           </h1>
-          <span className="flex w-28 h-[2px] rounded-xl bg-gradient-to-r from-purple-500 to-pink-500"></span>
+          <span className="flex w-28 h-[1px] rounded-xl bg-gradient-to-r from-purple-500 to-pink-500"></span>
           <p className="text-white text-sm font-normal text-center">
-            {t("question")}
+            {readBooksHead[1]}
           </p>
-        </div>
+        </header>
         <div className="flex flex-wrap items-center justify-center sm:justify-between  gap-y-20 gap-x-1 w-full">
           {booksCard.map((elem, index) => (
             <div
