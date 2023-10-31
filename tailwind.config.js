@@ -6,8 +6,8 @@ export default {
       colors: {
         deepReddishBrown: "#8d2729",
         deepRed: "#a12c2f",
-        gray:"#777777",
-        goldenRod:"#f5a425"
+        gray: "#777777",
+        goldenRod: "#f5a425",
       },
     },
   },

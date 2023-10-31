@@ -19,19 +19,25 @@ function OurTeachers() {
         </header>
         <div className="flex flex-wrap items-center justify-center sm:justify-between  gap-y-20 gap-x-1 w-full">
           {teacherData.map((elem, index) => (
-            <div key={index} data-aos="zoom-in" className="w-[242px]">
-              <div>
-                <img src={elem.teacherImg} alt="" />
-                <div className="flex w-full justify-around">
+            <div key={index} data-aos="zoom-in" className="sm:w-[242px] w-full">
+              <div className="relative img-box">
+                <img src={elem.teacherImg} alt="" className="w-full" />
+                <div className="icons-box hidden w-full justify-evenly absolute top-1/2 translate-y-[-50%] duration-300 bg-red-300 h-full bg-[rgba(0,0,0,.7)] items-center">
                   {elem.icons.map((elem, index) => (
-                    <a key={index} href={elem.link} target="_blank">
+                    <a
+                      target="_blank"
+                      key={index}
+                      href={elem.link}
+                      rel="noreferrer"
+                      className="text-white hover:text-goldenRod duration-300"
+                    >
                       <i className={elem.class}></i>
                     </a>
                   ))}{" "}
                 </div>
               </div>
-              <div className="flex flex-col items-center px-5 border-b-2 border-l-2 border-r-2 border-[#eeeeee] p-5">
-                <h2 className="text-xs font-normal tracking-wide">
+              <div className="flex flex-col items-center px-5 border-b-2 border-l-2 border-r-2 border-[#eeeeee] ">
+                <h2 className="text-xs font-normal tracking-wide mb-1 pt-5 mt-0">
                   {elem.teacherName}
                 </h2>
                 <h3 className="text-xs text-[#a8a8a8]">{elem.position}</h3>
