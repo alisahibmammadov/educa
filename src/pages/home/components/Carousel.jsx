@@ -4,15 +4,7 @@ import { useTranslation } from "react-i18next";
 
 function Carousel() {
   const { t } = useTranslation();
-  const responsivenes = {
-    0: {
-      items: 1,
-    },
-    1024: {
-      items: 1,
-      itemsFit: "contain",
-    },
-  };
+ 
   const items = t("homeCarousel", { returnObjects: true }).map(
     (elem, index) => (
       <div key={index} className="relative select-none">
@@ -54,8 +46,8 @@ function Carousel() {
   );
   return (
     <main className="bg-[#1f272b]">
-      <section className=" w-full container mx-auto px-3 md:px-1 py-20">
-        <AliceCarousel autoPlay responsive={responsivenes} items={items} />
+      <section className=" w-full container mx-auto px-3 md:px-1 py-10 md:py-20">
+        <AliceCarousel autoPlay  items={items} />
       </section>
     </main>
   );
