@@ -37,7 +37,7 @@ function Carousel() {
           >
             {elem.info}
           </p>
-          <button className="text-white p-1 md:py-3 md:px-7 text-[8px] md:text-xs bg-[#222222]">
+          <button className="text-white p-1 md:py-3 md:px-7 text-[8px] md:text-xs bg-[#222222] hover:text-[#222222] hover:bg-goldenRod duration-300">
             {elem.button}
           </button>
         </div>

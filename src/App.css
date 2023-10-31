@@ -27,3 +27,17 @@ body {
 .alice-carousel__next-btn-item {
   display: none !important;
 }
+.price-red {
+  
+  width: 85px;
+  height: 30px;
+  border: 16px solid #a12c2f;
+  border-left: 1.5em solid transparent;
+}
+.price-gold {
+  
+  width: 85px;
+  height: 30px;
+  border: 16px solid #f5a425;
+  border-left: 1.5em solid transparent;
+}

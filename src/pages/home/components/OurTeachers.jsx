@@ -7,7 +7,7 @@ function OurTeachers() {
   let teacherPageHead = t("teacherPageHead", { returnObjects: true });
   return (
     <main>
-      <section className=" w-full container mx-auto px-3 md:px-1 py-20 flex flex-col justify-between items-center gap-12">
+      <section className=" w-full container mx-auto px-3 md:px-1 py-10 md:py-20 flex flex-col justify-between items-center gap-12">
         <header className="flex flex-col items-center gap-6 pb12">
           <h1 className="text-2xl font-medium text-black">
             {teacherPageHead[0]}

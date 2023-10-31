@@ -25,6 +25,12 @@ import {
   homeCarouselEn,
   homeCarouselRu,
 } from "../data/home/carousel/homeCarousel";
+// Popular COurses Card
+import {
+  popularCoursesAz,
+  popularCoursesEn,
+  popularCoursesRu,
+} from "../data/home/popularCourses/popularCourses";
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 const resources = {
   az: {
@@ -50,6 +56,12 @@ const resources = {
       ],
       //*** Home Carousel Start
       homeCarousel: homeCarouselAz,
+      //*** home popularCourses start
+      popularCourseHead: [
+        "Populyar Kurslar",
+        "Twee Vice synth Stumptown Distillery estetik yavaş karbohidrat",
+      ],
+      popularCoursesData: popularCoursesAz,
     },
   },
   en: {
@@ -75,6 +87,12 @@ const resources = {
       ],
       //*** Home Carousel Start
       homeCarousel: homeCarouselEn,
+      //*** home popularCourses start
+      popularCourseHead: [
+        "Popular Courses",
+        "Twee Vice synth stumptown distillery aesthetic slow carb",
+      ],
+      popularCoursesData: popularCoursesEn,
     },
   },
   ru: {
@@ -100,6 +118,12 @@ const resources = {
       ],
       //*** Home Carousel Start
       homeCarousel: homeCarouselRu,
+      //*** home popularCourses start
+      popularCourseHead: [
+        "Популярные курсы",
+        "Тви Порок синтезатор Стамптаун Винокурня Эстетичный медленный карбюратор",
+      ],
+      popularCoursesData: popularCoursesRu,
     },
   },
 };
