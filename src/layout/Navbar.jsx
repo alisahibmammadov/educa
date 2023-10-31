@@ -85,7 +85,6 @@ function Navbar() {
                 className="relative flex items-center  py-7 md:px-2 lg:px-4 xl:px-6 "
               >
                 <span
-                  
                   className="select-none cursor-pointer hover:text-[#f5a425] md:text-[10px] lg:text-sm text-[#222222] font-normal tracking-[.3px]"
                   onClick={() => handleClickLink(elem.id)}
                 >
@@ -109,7 +108,6 @@ function Navbar() {
               </div>
             ))}
             <Link
-              
               className="cursor-pointer hover:text-[#f5a425] md:text-xs lg:text-sm text-[#222222] font-normal tracking-[.3px]"
               to="/contact"
             >
@@ -130,7 +128,7 @@ function Navbar() {
         {navMobile ? (
           <div
             data-aos="fade-right"
-            className="flex md:hidden absolute top-0 left-0 bg-deepReddishBrown p-5 rounded-r z-[9999]"
+            className="flex md:hidden absolute top-0 left-0 bg-deepReddishBrown p-5 pb-10 pr-12 rounded-r z-[9999]"
           >
             <div className=" flex flex-col items-start justify-end">
               {linksData.map((elem, index) => (
@@ -167,6 +165,33 @@ function Navbar() {
               >
                 {t("contact")}
               </Link>
+              {/* language */}
+              <div className="relative mt-4">
+                <span
+                  className="select-none cursor-pointer text-[#777777] text-sm font-normal"
+                  onClick={() => setClickedBtn(!clickedBtn)}
+                >
+                  <i className="fa-solid fa-earth-americas mt-2"></i>{" "}
+                  {lang.toLocaleUpperCase()}
+                </span>
+                {clickedBtn ? (
+                  <nav
+                    data-aos="fade-right"
+                    className="absolute left-0 translate-x-[-50%] z-10 flex flex-row items-start bg-[#f2f5f6]"
+                  >
+                    {langBtnData.map((elem, index) => (
+                      <button
+                        onClick={() => handleClick(elem.props)}
+                        key={index}
+                        className={elem.class}
+                      >
+                        {elem.content}
+                      </button>
+                    ))}
+                  </nav>
+                ) : null}
+              </div>
+              {/* End */}
             </div>
           </div>
         ) : null}
