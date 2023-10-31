@@ -1,3 +1,4 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +17,13 @@ body {
 }
 .img-box:hover .icons-box {
   display: flex;
+}
+
+.alice-carousel__dots,
+.alice-carousel__dots-item,
+.alice-carousel__prev-btn,
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn,
+.alice-carousel__next-btn-item {
+  display: none !important;
 }

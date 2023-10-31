@@ -22,7 +22,7 @@ function OurTeachers() {
             <div key={index} data-aos="zoom-in" className="sm:w-[242px] w-full">
               <div className="relative img-box">
                 <img src={elem.teacherImg} alt="" className="w-full" />
-                <div className="icons-box hidden w-full justify-evenly absolute top-1/2 translate-y-[-50%] duration-300 bg-red-300 h-full bg-[rgba(0,0,0,.7)] items-center">
+                <div className="icons-box hidden w-full justify-evenly absolute top-1/2 translate-y-[-50%] duration-300 cursor-pointer h-full bg-[rgba(0,0,0,.7)] items-center">
                   {elem.icons.map((elem, index) => (
                     <a
                       target="_blank"

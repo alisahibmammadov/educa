@@ -19,6 +19,12 @@ import {
   OurTeachersEn,
   OurTeachersRu,
 } from "../data/home/ourteachers/OurTeachers";
+//  Home Carousel
+import {
+  homeCarouselAz,
+  homeCarouselEn,
+  homeCarouselRu,
+} from "../data/home/carousel/homeCarousel";
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 const resources = {
   az: {
@@ -42,6 +48,8 @@ const resources = {
         "Müəllimlərimiz",
         "High Life kalamar sözün əsl mənasında Helvetica quinoa kilsə açarıdır",
       ],
+      //*** Home Carousel Start
+      homeCarousel: homeCarouselAz,
     },
   },
   en: {
@@ -65,6 +73,8 @@ const resources = {
         "Our Teachers",
         "High Life squid literally scenester fap Helvetica quinoa church-key",
       ],
+      //*** Home Carousel Start
+      homeCarousel: homeCarouselEn,
     },
   },
   ru: {
@@ -88,6 +98,8 @@ const resources = {
         "Наши учителя",
         "High Life кальмар буквально сценастер fap Helvetica quinoa церковный ключ",
       ],
+      //*** Home Carousel Start
+      homeCarousel: homeCarouselRu,
     },
   },
 };
