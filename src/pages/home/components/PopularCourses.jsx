@@ -53,19 +53,19 @@ function PopularCourses() {
     },
     600: {
       items: 2,
-      // itemsFit: "contain",
+      itemsFit: "contain",
     },
     840: {
       items: 2,
-      // itemsFit: "contain",
+      itemsFit: "contain",
     },
     1024: {
       items: 3,
-      // itemsFit: "contain",
+      itemsFit: "contain",
     },
     1300: {
       items: 4,
-      // itemsFit: "contain",
+      itemsFit: "contain",
     },
   };
   return (
