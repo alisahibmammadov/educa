@@ -54,7 +54,7 @@ const popularCoursesAz = [
     coursesImg: Courses4,
     profileImg: Profile4,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "Free" }],
+    price: [{ free: true, price: "Free" }],
     head: "What can you do with a business degree",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -66,7 +66,7 @@ const popularCoursesAz = [
     coursesImg: Courses5,
     profileImg: Profile1,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "$19.99" }],
+    price: [{ free: true, price: "Free" }],
     head: "Fashion buying and Product Management",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -102,7 +102,7 @@ const popularCoursesAz = [
     coursesImg: Courses8,
     profileImg: Profile4,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "Free" }],
+    price: [{ free: true, price: "Free" }],
     head: "How to become a powerful speaker",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -118,7 +118,7 @@ const popularCoursesAz = [
     head: "How to become a powerful speaker",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
-      { head: "view more", iClass: "fa-solid fa-arrow-right", link: "/" },
+      { head: "view more", iClass: "fa-solid fa-arrow-right text-[#222222]", link: "/" },
     ],
   },
 ];
@@ -164,7 +164,7 @@ const popularCoursesEn = [
     coursesImg: Courses4,
     profileImg: Profile4,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "Free" }],
+    price: [{ free: true, price: "Free" }],
     head: "What can you do with a business degree",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -176,7 +176,7 @@ const popularCoursesEn = [
     coursesImg: Courses5,
     profileImg: Profile1,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "$19.99" }],
+    price: [{ free: true, price: "Free" }],
     head: "Fashion buying and Product Management",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -212,7 +212,7 @@ const popularCoursesEn = [
     coursesImg: Courses8,
     profileImg: Profile4,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "Free" }],
+    price: [{ free: true, price: "Free" }],
     head: "How to become a powerful speaker",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -224,7 +224,7 @@ const popularCoursesEn = [
     coursesImg: Courses9,
     profileImg: Profile1,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "Free" }],
+    price: [{ free: true, price: "Free" }],
     head: "How to become a powerful speaker",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -274,7 +274,7 @@ const popularCoursesRu = [
     coursesImg: Courses4,
     profileImg: Profile4,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "Free" }],
+    price: [{ free: true, price: "Free" }],
     head: "What can you do with a business degree",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -286,7 +286,7 @@ const popularCoursesRu = [
     coursesImg: Courses5,
     profileImg: Profile1,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "$19.99" }],
+    price: [{ free: true, price: "Free" }],
     head: "Fashion buying and Product Management",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -322,7 +322,7 @@ const popularCoursesRu = [
     coursesImg: Courses8,
     profileImg: Profile4,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "Free" }],
+    price: [{ free: true, price: "Free" }],
     head: "How to become a powerful speaker",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -334,7 +334,7 @@ const popularCoursesRu = [
     coursesImg: Courses9,
     profileImg: Profile1,
     coursesTeach: "Ernest Byrd",
-    price: [{ free: false, price: "Free" }],
+    price: [{ free: true, price: "Free" }],
     head: "How to become a powerful speaker",
     info: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium!",
     linkMore: [
@@ -342,5 +342,6 @@ const popularCoursesRu = [
     ],
   },
 ];
+
 
 export { popularCoursesAz, popularCoursesEn, popularCoursesRu };

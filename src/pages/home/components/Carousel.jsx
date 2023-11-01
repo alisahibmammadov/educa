@@ -19,12 +19,12 @@ function Carousel() {
             </h2>
             <h2
               data-aos="fade-right"
-              className="font-bold text-[#222222]  break-words text-xs md:text-3xl "
+              className="font-bold text-[#222222]  break-words text-xs md:text-3xl flex items-center"
             >
               {elem.solution[0]}{" "}
               <span
                 data-aos="fade-down"
-                className="bg-goldenRod font-bold text-[#222222] md:py-2 md:px-3 mx-2 inline-block"
+                className="bg-goldenRod font-bol text-[8px] p-1 sm:text-base  rounded-md text-[#222222] md:py-2 md:px-3 mx-2 inline-block"
               >
                 {elem.solution[1]}
               </span>
