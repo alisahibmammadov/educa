@@ -92,7 +92,7 @@ function Navbar() {
                   <i className="fa-solid fa-chevron-down  text-xs"></i>
                 </span>
                 {linkBtn == elem.id ? (
-                  <nav className="flex flex-col gap-2  absolute top-full translate-x-[-50%] left-1/2 bg-deepRed py-1">
+                  <nav className="flex flex-col gap-2 z-10  absolute top-full translate-x-[-50%] left-1/2 bg-deepRed py-1">
                     {elem.linkName.map((elem, index) => (
                       <Link
                         onClick={() => setLinkBtn(0)}
