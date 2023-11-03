@@ -5,7 +5,7 @@ const footerDataAz = [
       {
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis?",
         linkName: "Read More",
-        iClas: "fa-solid fa-arrow-right",
+        iClass: "fa-solid fa-arrow-right",
         link: "/",
       },
     ],
@@ -42,7 +42,7 @@ const footerDataEn = [
       {
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis?",
         linkName: "Read More",
-        iClas: "fa-solid fa-arrow-right",
+        iClass: "fa-solid fa-arrow-right",
         link: "/",
       },
     ],
@@ -79,7 +79,7 @@ const footerDataRu = [
       {
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis?",
         linkName: "Read More",
-        iClas: "fa-solid fa-arrow-right",
+        iClass: "fa-solid fa-arrow-right",
         link: "/",
       },
     ],
